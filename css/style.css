@@ -1,0 +1,9 @@
+/*
+ * Navbar styling
+ */
+#navbar {
+  background-color: #002E5F;
+  border-radius: 0;
+  border-top: none;
+  margin-top: 0;
+}
