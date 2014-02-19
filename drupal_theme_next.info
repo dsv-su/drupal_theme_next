@@ -19,6 +19,13 @@ regions[footer]         = 'Footer'
 regions[page_top]       = 'Page top'
 regions[page_bottom]    = 'Page bottom'
 
+;;;;;;;;;;;;;;;;;;;;;
+;; DSV Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+regions[top_links_left]  = 'Top Links (left)'
+regions[top_links_right] = 'Top Links (right)'
+
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Stylesheets
