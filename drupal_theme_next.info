@@ -15,7 +15,6 @@ regions[help]           = 'Help'
 regions[content]        = 'Content'
 regions[sidebar_first]  = 'Primary'
 regions[sidebar_second] = 'Secondary'
-regions[footer]         = 'Footer'
 regions[page_top]       = 'Page top'
 regions[page_bottom]    = 'Page bottom'
 
@@ -25,6 +24,8 @@ regions[page_bottom]    = 'Page bottom'
 
 regions[top_links_left]  = 'Top Links (left)'
 regions[top_links_right] = 'Top Links (right)'
+regions[footer_left]     = 'Footer left'
+regions[footer_right]    = 'Footer right'
 
 
 ;;;;;;;;;;;;;;;;;;;;;
