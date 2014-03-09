@@ -112,18 +112,19 @@
     margin-bottom: 4px;
   }
 
-  #navbar .navbar-collapse.collapse {
+  #navbar div.navbar-collapse.collapse {
+    background-image: url(../img/head-menu-row-repeater.gif);
+    background-position: left bottom;
+    background-repeat: repeat-x;
     font-family: Verdana, Arial, Helvetica, sans-serif;
     padding: 0;
   }
 
   #navbar nav > ul.menu.nav.navbar-nav {
-    background-image: url(../img/head-menu-row-repeater.gif);
-    background-position: left bottom;
     height: 35px;
     line-height: 37px;
     margin-top: 5px;
-    width: 100%;
+    width: 70%;
   }
 
   #navbar nav > ul.menu.nav.navbar-nav > li.first {
@@ -149,6 +150,35 @@
   #navbar nav > ul.menu.nav.navbar-nav > li > a.active {
     background-color: transparent;
   }
+}
+
+
+/*
+ * Navigation search styling
+ * --------------------------
+ */
+@media (min-width: 768px) {
+  #navbar nav > div.region-navigation-search > #block-search-form {
+    display: inline-block;
+    float: right;
+    margin: 10px 0 0 0;
+    vertical-align: bottom;
+    width: 25%;
+  }
+
+  #navbar nav > div.region-navigation-search > #block-search-form input#edit-search-block-form--2 {
+    height: 28px;
+    padding: 3px 12px;
+  }
+
+  #navbar nav > div.region-navigation-search > #block-search-form button.btn.btn-default {
+    padding: 3px 12px;
+  }
+}
+
+#navbar nav > div.region-navigation-search > #block-search-form button.btn.btn-default {
+  background-color: #e17e33;
+  color: white;
 }
 
 
@@ -247,4 +277,41 @@ footer.footer address > strong {
 footer.footer a {
   color: rgb(0, 91, 127);
   text-decoration: underline;
+}
+
+footer.footer > div.footer-section {
+  display: inline-block;
+  vertical-align: top;
+}
+
+footer.footer > div#footer-left {
+  width: 68%;
+}
+
+footer.footer > div#footer-right {
+  width: 30%;
+}
+
+footer.footer > div#footer-right > div.region-footer-right > section.block {
+  float: right;
+}
+
+footer.footer > div#footer-right > div.region-footer-right > section.block ul {
+  list-style-type: none;
+}
+
+footer.footer > div#footer-right > div.region-footer-right > section.block li {
+  border-right: 1px solid #666;
+  display: inline-block;
+  margin-left: 5px;
+  padding-right: 8px;
+}
+
+footer.footer > div#footer-right > div.region-footer-right > section.block li:first-child {
+  margin-left: 0;
+}
+
+footer.footer > div#footer-right > div.region-footer-right > section.block li:last-child {
+  border-right: none;
+  padding-right: 0;
 }
