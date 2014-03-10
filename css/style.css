@@ -1,4 +1,13 @@
 /*
+ * Theme-wide styling
+ * -------------------
+ */
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+
+/*
  * Top links styling
  * ------------------
  */
@@ -89,13 +98,51 @@
   padding: 0;
 }
 
-#navbar > div.container > .navbar-header > .navbar-brand {
+#navbar > div.container > div.navbar-header > .navbar-brand {
   color: white;
 }
 
+#navbar > div.container > div.navbar-header > button.navbar-toggle {
+  background-color: #ededed;
+}
+
+#navbar > div.container > div.navbar-header > button.navbar-toggle:focus {
+  outline: none;
+}
+
+#navbar > div.container > div.navbar-header > button.navbar-toggle > span.icon-bar {
+  background-color: #666;
+}
+
 @media (max-width: 767px) {
+  #navbar > div.container > div.navbar-header {
+    margin-right: 0;
+  }
+
   #navbar > div.container > div.navbar-header > .logo {
     display: none;
+  }
+
+  #navbar > div.container > div.navbar-collapse {
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  #navbar > div.container > div.navbar-collapse > nav > ul.navbar-nav {
+    margin: 0;
+  }
+
+  #navbar > div.container > div.navbar-collapse > nav > ul.navbar-nav > li > a {
+    color: #ededed;
+  }
+
+  #navbar > div.container > div.navbar-collapse > nav > ul.navbar-nav > li > a:hover {
+    color: #999;
+  }
+
+  #navbar > div.container > div.navbar-collapse > nav > ul.navbar-nav > li.active > a,
+  #navbar > div.container > div.navbar-collapse > nav > ul.navbar-nav > li.active > a:hover {
+    color: #555;
   }
 }
 
@@ -157,6 +204,23 @@
  * Navigation search styling
  * --------------------------
  */
+#navbar nav > div.region-navigation-search > #block-search-form button.btn.btn-default {
+  background-color: #e17e33;
+  color: white;
+}
+
+@media (max-width: 767px) {
+    #navbar > div.container > div.navbar-collapse > nav > div.region-navigation-search {
+      margin-left: 5px;
+      margin-right: 10px;
+    }
+
+    #navbar nav > div.region-navigation-search > #block-search-form button.btn.btn-default {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+}
+
 @media (min-width: 768px) {
   #navbar nav > div.region-navigation-search > #block-search-form {
     display: inline-block;
@@ -172,13 +236,8 @@
   }
 
   #navbar nav > div.region-navigation-search > #block-search-form button.btn.btn-default {
-    padding: 3px 12px;
+    padding: 3px 14px;
   }
-}
-
-#navbar nav > div.region-navigation-search > #block-search-form button.btn.btn-default {
-  background-color: #e17e33;
-  color: white;
 }
 
 
@@ -258,6 +317,16 @@ div.main-container h1 {
   font-weight: normal;
 }
 
+div.main-container section#block-system-main p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 767px) {
+  div.main-container section#block-system-main {
+    margin-bottom: 16px;
+  }
+}
+
 
 /*
  * Footer styling
@@ -298,6 +367,7 @@ footer.footer > div#footer-right > div.region-footer-right > section.block {
 
 footer.footer > div#footer-right > div.region-footer-right > section.block ul {
   list-style-type: none;
+  padding: 0;
 }
 
 footer.footer > div#footer-right > div.region-footer-right > section.block li {
