@@ -2,8 +2,27 @@
  * Theme-wide styling
  * -------------------
  */
+
 html {
   -webkit-font-smoothing: antialiased;
+}
+
+body {
+  color: #000000;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+a {
+  color: #005b7f;
+}
+
+a:hover {
+  color: #000000;
+}
+
+a:visited {
+  color: #7d7d7d;
 }
 
 
@@ -11,6 +30,7 @@ html {
  * Top links styling
  * ------------------
  */
+
 .top-links {
   display: inline-block;
   width: 35%;
@@ -56,7 +76,7 @@ html {
 .top-links > div.region > section.block ul {
   color: white;
   font-family: Verdana, Arial, Helvetica, sans-serif;
-  font-size: 70%;
+  font-size: 0.8em;
   list-style-type: none;
   padding-left: 0;
 }
@@ -90,6 +110,7 @@ html {
  * Navbar styling
  * ---------------
  */
+
 #navbar {
   background-color: #002E5F;
   border-radius: 0;
@@ -160,7 +181,7 @@ html {
   }
 
   #navbar div.navbar-collapse.collapse {
-    background-image: url(../img/head-menu-row-repeater.gif);
+    background-image: url('../img/head-menu-row-repeater.gif');
     background-position: left bottom;
     background-repeat: repeat-x;
     font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -179,7 +200,7 @@ html {
   }
 
   #navbar nav > ul.menu.nav.navbar-nav > li.active {
-    background-image: url(../img/head-menu-row-active.png);
+    background-image: url('../img/head-menu-row-active.png');
     background-position: right bottom;
     background-repeat: no-repeat;
     padding-right: 12px;
@@ -187,7 +208,7 @@ html {
 
   #navbar nav > ul.menu.nav.navbar-nav > li > a {
     color: #005b7f;
-    font-size: 115%;
+    font-size: 1.3em;
     height: 36px;
     line-height: 38px;
     text-decoration: none;
@@ -204,6 +225,7 @@ html {
  * Navigation search styling
  * --------------------------
  */
+
 #navbar nav > div.region-navigation-search > #block-search-form button.btn.btn-default {
   background-color: #e17e33;
   color: white;
@@ -245,6 +267,7 @@ html {
  * "Sidebar-first" styling
  * ------------------------
  */
+
 .region-sidebar-first {
   background-color: transparent;
   border: 0px;
@@ -258,6 +281,7 @@ html {
  * Blocks styling
  * ---------------
  */
+
 .region-sidebar-first > section.block,
 .region-sidebar-second > section.block {
   background-color: #ccd5df;
@@ -287,10 +311,12 @@ html {
   text-decoration: underline;
 }
 
+
 /*
  * User login block styling
  * -------------------------
  */
+
 #block-user-login {
   background-color: #f8f8f8;
   font-size: 0.85em;
@@ -310,11 +336,33 @@ html {
  * Content styling
  * ----------------
  */
+
 div.main-container h1 {
+  font-size: 1.8em;
+  font-weight: normal;
+}
+
+div.main-container h2 {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+div.main-container h3 {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+div.main-container h1,
+div.main-container h2,
+div.main-container h3 {
   color: #002e5f;
   font-family: Verdana, Arial, Helvetica, sans-serif;
-  font-size: 1.6em;
-  font-weight: normal;
+}
+
+div.main-container h1 > a,
+div.main-container h2 > a,
+div.main-container h3 > a {
+  color: #002e5f;
 }
 
 div.main-container section#block-system-main p {
@@ -332,20 +380,26 @@ div.main-container section#block-system-main p {
  * Footer styling
  * ---------------
  */
+
 footer.footer {
   font-family: Verdana, Arial, Helvetica, sans-serif;
-  font-size: 74%;
+  font-size: 80%;
   padding-top: 10px;
 }
 
 footer.footer address > strong {
-  font-size: 110%;
+  color: #002e5f;
+  font-size: 1.3em;
   line-height: 24px;
 }
 
 footer.footer a {
-  color: rgb(0, 91, 127);
+  color: #005b7f;
   text-decoration: underline;
+}
+
+footer.footer a:hover {
+  color: #000000;
 }
 
 footer.footer > div.footer-section {
