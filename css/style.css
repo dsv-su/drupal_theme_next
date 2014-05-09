@@ -135,9 +135,20 @@ a:visited {
   background-color: #666;
 }
 
+@media (max-width: 400px) {
+  #navbar > div.container > div.navbar-header > .navbar-brand {
+    font-size: 1.3em !important;
+  }
+}
+
 @media (max-width: 767px) {
   #navbar > div.container > div.navbar-header {
     margin-right: 0;
+  }
+
+  #navbar > div.container > div.navbar-header > .navbar-brand {
+    font-size: 1.8em;
+    padding-left: 30px;
   }
 
   #navbar > div.container > div.navbar-header > .logo {
@@ -175,6 +186,13 @@ a:visited {
     padding-right: 20px;
   }
 
+  #navbar > div.container > div.navbar-header > .navbar-brand {
+    bottom: 0;
+    font-size: 1.7em;
+    margin-bottom: 40px;
+    position: absolute;
+  }
+
   #navbar > div.container > div.navbar-header > .logo {
     margin-top: 0px;
     margin-bottom: 4px;
@@ -208,15 +226,28 @@ a:visited {
 
   #navbar nav > ul.menu.nav.navbar-nav > li > a {
     color: #005b7f;
-    font-size: 1.3em;
+    font-size: 1.1em;
     height: 36px;
     line-height: 38px;
     text-decoration: none;
-    padding: 0 12px;
+    padding: 0 8px;
   }
 
   #navbar nav > ul.menu.nav.navbar-nav > li > a.active {
     background-color: transparent;
+  }
+}
+
+@media (min-width: 800px) {
+  #navbar > div.container > div.navbar-header > .navbar-brand {
+    font-size: 2.2em;
+  }
+}
+
+@media (min-width: 1000px) {
+  #navbar nav > ul.menu.nav.navbar-nav > li > a {
+    font-size: 1.3em;
+    padding: 0 12px;
   }
 }
 
@@ -361,11 +392,15 @@ div.main-container h3 {
 
 div.main-container h1 > a,
 div.main-container h2 > a,
-div.main-container h3 > a {
+div.main-container h3 > a,
+div.main-container h1 > a:visited,
+div.main-container h2 > a:visited,
+div.main-container h3 > a:visited {
   color: #002e5f;
 }
 
-div.main-container section#block-system-main p {
+div.main-container section#block-system-main p,
+div.main-container section#block-system-main ul {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 

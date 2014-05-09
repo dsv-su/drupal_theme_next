@@ -77,17 +77,17 @@
   <div class="container">
 
     <!-- Top links -->
-    <?php if ($page['top_links_left']): ?>
-      <div id="top-links-left" class="top-links">
+    <div id="top-links-left" class="top-links">
+      <?php if ($page['top_links_left']): ?>
         <?php print render($page['top_links_left']); ?>
-      </div>
-    <?php endif; ?>
+      <?php endif; ?>
+    </div>
 
-    <?php if ($page['top_links_right']): ?>
-      <div id="top-links-right" class="top-links">
+    <div id="top-links-right" class="top-links">
+      <?php if ($page['top_links_right']): ?>
         <?php print render($page['top_links_right']); ?>
-      </div>
-    <?php endif; ?>
+      <?php endif; ?>
+    </div>
 
     <!-- Navbar -->
     <div class="navbar-header">
