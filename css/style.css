@@ -54,8 +54,9 @@ a:visited {
 
  
  .site{
-     width: 1143px;
-     border: 2px #fff solid ;
+     max-width: 1143px;
+	 
+    border: 2px #fff solid ;
     margin: auto;
 	/*box-shadow: 10px 10px 5px #888888;*/
 	box-shadow: 0 0 15px #666;
@@ -317,7 +318,7 @@ a:visited {
     }
 
     #navbar nav > div.region-navigation-search > #block-search-form button.btn.btn-default {
-      padding-left: 30px;
+      
       padding-right: 30px;
     }
 }
@@ -577,13 +578,12 @@ footer.footer > div.footer-section {
 
 
 
-.footer_pierre {
+.footer_ex{
 
+width: 100%;
+   background:  url("../img/back_foot_wide.png") repeat-x  top;
 
-    background:  url("../img/back_foot_wide.png") repeat-x  top;
-
-
-
+/*background-color: #f9f9f9;*/
 margin-top:20px;
 
   color: #141414;
@@ -597,18 +597,22 @@ footer.footer > div#footer-left {
   width: 100%;
 }
 
-footer.footer > div#footer-right {
-  width: 35%;
+/*footer.footer > div#footer-right {
+  width: 0%;
 }
 
 footer.footer > div#footer-right > div.region-footer-right > section.block {
   float: right;
 }
 
+
+
 footer.footer > div#footer-right > div.region-footer-right > section.block ul {
   list-style-type: none;
   padding: 0;
 }
+
+
 
 footer.footer > div#footer-right > div.region-footer-right > section.block li {
   border-right: 1px solid #666;
@@ -616,6 +620,8 @@ footer.footer > div#footer-right > div.region-footer-right > section.block li {
   margin-left: 5px;
   padding-right: 8px;
 }
+
+
 
 footer.footer > div#footer-right > div.region-footer-right > section.block li:first-child {
   margin-left: 0;
@@ -625,3 +631,5 @@ footer.footer > div#footer-right > div.region-footer-right > section.block li:la
   border-right: none;
   padding-right: 0;
 }
+
+*/
