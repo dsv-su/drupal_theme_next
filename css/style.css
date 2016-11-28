@@ -257,6 +257,11 @@ a:visited {
  * --------------------------
  */
 
+#navbar nav > div.region-navigation-search > #block-search-form {
+  margin-bottom: -19px;
+  padding-top: 3px;
+}
+
 #navbar nav > div.region-navigation-search > #block-search-form button.btn.btn-default {
   background-color: #e17e33;
   color: white;
@@ -278,14 +283,14 @@ a:visited {
   #navbar nav > div.region-navigation-search > #block-search-form {
     display: inline-block;
     float: right;
-    margin: 10px 0 0 0;
+    /*margin: 10px 0 0 0;*/
     vertical-align: bottom;
-    width: 25%;
+    /*width: 25%;*/
   }
 
   #navbar nav > div.region-navigation-search > #block-search-form input#edit-search-block-form--2 {
-    height: 28px;
-    padding: 3px 12px;
+  /*  height: 28px;
+    padding: 3px 12px; */
   }
 
   #navbar nav > div.region-navigation-search > #block-search-form button.btn.btn-default {
